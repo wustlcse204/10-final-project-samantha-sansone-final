@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2b163d0a1.js" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        
+        <div class="dropdown">
+        <button class="dropbtn"> <i class="fas fa-bars"></i> </button>
+        <div class="dropdown-content">
+            
+                <a href="#background"><span>What is Mercury Retrograde?</span></a>
+                <a href="#whatsign"><span>What is your zodiac sign?</span></a>
+                <a href="#zodiac"><span>Zodiac Information</span></a>
+                <a href="#retrograde"><span>Retrograde?</span></a>
+                <a href="#tips"><span>Retrograde Tips</span></a>
+            
+    
+          </div>
+    </div>
+
+    <i class="fas fa-mercury"> Mercury Retrograde</i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+    </div>
+        </nav>
+
+    <!-- image from: https://www.astrologyzone.com/everything-you-need-to-know-about-mercury-retrograde/ -->
+        <div style="background-image: url('background.png');" id="background">
+
+    <h1> Mercury Retrograde </h1>
+
+<!-- Content from: https://www.farmersalmanac.com/mercury-retrograde -->
+    <p> What Does Mercury Retrograde Mean? </p>
+
+   <p>The term retrograde comes from the Latin word retrogradus, which literally means “backward step.”
+
+As the name suggests, retrograde is when a planet appears to go backward in its orbit, as viewed from Earth. Astronomers refer to this as “apparent retrograde motion,” because it is an optical illusion.
+
+The opposite of retrograde is direct or prograde motion. Prograde motion is the term astronomers prefer, while astrologers are more prone to use the term “direct” motion.
+</p>
+
+<p> Backward Motion? </p>
+
+<p> 
+    Every planet in our Solar System travels in the same direction in its journey around the Sun, and none of them ever pause and turn back in the opposite direction. Yet, all of them appear to do just that from time to time.
+    
+    Because of the Earth’s daily rotation, the objects in the night sky appear to “move” from east to west through the night sky. While the location of the stars relative to the Earth is fixed, at least from our vantage point, the other planets in our Solar System all orbit the Sun at varying speeds.
+
+    The outer planets — Mars, Jupiter, Saturn, Uranus, and Neptune — all take longer to orbit the Sun than the Earth does, because their orbits are larger. Because of this, the Earth often laps these planets in its journey around the Sun.
+
+When the Earth overtakes an outer planet, that planet appears to travel backward, as compared to the stars, for a time.
+
+Picture two cars on the highway going in the same direction in different lanes. If one car is driving faster than the other, the slower car will appear to go backward from the perspective of a person in the faster car, even though the slower car is still going pretty fast in the same direction.
+
+For the inner planets, Mercury and Venus, the mechanism that causes them to turn retrograde is the same, but in reverse. Mercury and Venus appear to go retrograde when they lap us.
+
+Because Mercury completes its orbit around the Sun in only 88 days, the Swift Planet becomes retrograde three or four times in a calendar year, for about three weeks at a time. Outer planets have less frequent, but longer-lasting, periods of retrograde motion.
+
+</p>
+
+<p> Why Dread it? </p>
+
+<p> So what does all of that have to do with people wanting to hide in their rooms for weeks at a time?
+
+    Astrologers believe that the Moon, stars, planets, and Sun affect happenings here on Earth, and that each planet in our Solar System rules a different aspect of life.
+    
+    Like the Greek messenger god it was named for, Mercury is said to govern transportation and communication.
+    
+    Those who dread Mercury’s retrograde motion say that, when the planet travels backward, its power to positively influence these domains is stifled, leading to chaos.
+
+Believers in the malevolent power of Mercury retrograde blame the phenomenon for everything from arguments to lost mail or luggage to automobile accidents and warn people to hold back on conducting important business during this time.
+    </p>
+</div>
+
+
+<div id="whatsign">
+    <h2> What is your Zodiac Sign? </h2>
+<p> Enter your birthday Month and Day:</p>
+<p> Month: <input type="number" id="month"></p>
+<p> Day: <input type="number" id="day"></p>
+<button onclick=findsign() class="button" id="findsign"> Find your sign </button>
+<p> Your zodiac sign is: <span id="zodiac"></span></p>
+
+
+</div>
+
+
+<div id="zodiac">
+    <h2> Zodiac Signs & Mercury Retrograde</h2>
+
+    <p id="info"> What does Mercury Retrograde mean for each zodiac sign? </p>
+
+    <!-- content from: https://www.almanac.com/content/mercury-retrograde-and-zodiac-signs -->
+    <!-- graphics from: https://www.cosmopolitan.com/uk/entertainment/horoscopes-monthly/a29383721/star-sign-dates/ -->
+    <div class="container">
+        <img src="aqarius.gif" alt="aquarius zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN AQUARIUS (Jan 20–Feb 18): With Mercury retrograde in Aquarius, the sign that governs relationships, friendships are put at risk. Petty squabbles, misunderstandings, and miscommunications abound. Know who your friends are. </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="pisces.gif" alt="pisces zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN PISCES (Feb 19–Mar 20): Foggy thinking, daydreams, and escapism are the norm; day-to-day realities confound otherwise clear heads when Mercury, the planet that rules logic, is in Pisces, which governs illusion. Practice creative pursuits—writing, dancing, photography, film, or painting.</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="aries.gif" alt="aries zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN ARIES (Mar 21–Apr 19): Expect to be frustrated and frazzled. Assertive, impulsive Aries wants to move ahead, and all of the energy is going backward. Watch what you say and how you say it. Pay attention to what people say to you; you might be pleasantly surprised. </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="taurus.gif" alt="taurus zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN TAURUS (Apr 20–May 20): Take time to formulate your thoughts. Taurus, an unhurried sign, slows down the mental processes. He also governs banking, so delay money matters. Review financial matters, and position yourself for growth. </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="gemini.gif" alt="gemini zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN GEMINI (May 21–Jun 20): Because Gemini rules communications, be prepared for miscommunications when Mercury is in this sign. Expect lots of phone calls or none, and lost or misplaced mail. You may not articulate clearly, and gossip abounds. Old friends may reconnect. </div>
+        </div>
+    </div>
+   
+    <div class="container">
+        <img src="cancer.gif" alt="cancer zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN CANCER (Jun 21–Jul 22): Expect annoyances at home with baking, gardening, and household duties under domesticated Cancer. Complete repair projects that weren’t finished or done correctly.</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="leo.gif" alt="leo zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN LEO (Jul 23–Aug 22): Avoid speculative investments. It is not a good time to buy and sell or do any trading. Instead, analyze your investment portfolio. Use your know-how and advisory skills to help friends and associates.</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="virgo.gif" alt="virgo zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN VIRGO (Aug 23–Sep 22): Challenging situations arise, especially in the workplace. Expect product delays and equipment breakdowns, as well as crankiness among coworkers under finicky, detail-oriented Virgo. Double-check your work before you call it finished. </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <img src="libra.gif" alt="libra zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN LIBRA (Sep 23–Oct 22: Accept your physical attributes; do not have a makeover. Indecision reigns, so limit purchases—or risk returning them. Libra, representing beauty, grace, charm, and diplomacy, is out of balance. Refresh, relax, and rejuvenate. </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <img src="scorpio.gif" alt="scorpio zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN SCORPIO (Oct 23–Nov 21): Emotions rule—not common sense—so beware. Avoid affairs of the heart. Passionate Scorpio is also secretive, and your secrets may seep out. Keep them in a diary. </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <img src="sagittarius.gif" alt="sagittarius zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN SAGITTARIUS (Nov 22–Dec 21): It is not a time to travel, so reschedule or expect delays, lines, and lost directions. Instead, take care of local affairs. Patience and a sense of humor are needed. </div>
+        </div>
+    </div>
+   
+     
+    <div class="container">
+        <img src="capricorn.gif" alt="capricorn zodiac" style="width:400px;height:400px;">
+        <div class="overlay">
+            <div class="text">IN CAPRICORN (Dec 22–Jan 19): Avoid buying, selling, or renting real estate under Capricorn, the sign that governs property matters. Expect problems with paperwork, packing, and movers. Reunite with family or vacation at home. </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="retrograde">
+    <h2> Check to see what days are in Mercury Retrograde! </h2>
+
+        <label for="birthday">Date: </label>
+        <input type="date" id="date" name="date">
+        <button type="button" onclick="date()" id="submit">Submit</button>
+
+       <p id="mercury"> Mercury is: <span id="output"> </span></p> 
+
+</div>
+
+<div id="tips">
+   
+
+  <!-- content from: https://thechilltimes.com/8-tips-for-surviving-and-thriving-during-mercury-retrograde/ -->
+    <h1> 7 TIPS FOR SURVIVING AND THRIVING DURING MERCURY RETROGRADE BY LISA LEVINE </h1>
+
+    <ul>
+    <h3><li>Surrender to the Slowdowns</li>  </h3>
+    <p id="tip1"> Don’t fight them but instead, try to take a moment of gratitude for anything that slows us down a little. We live in a high-paced society; it’s good to take a moment. In the developed world, we spend very little time waiting for anything. You can give some gratitude for the high-speed internet that usually works perfectly during this time. </p>
+
+    <h3><li>Clean Out Your Closets </li></h3>
+    <p id="tip2"> This is my all-time favorite Mercury retrograde project. It’s a great time to deal with unfinished business, this can be on the physical level: the piles of clothes that need to go the Goodwill or the stacks of papers on your desk that need to be filed—take this time to clean up and get organized. Mercury rules Virgo, the great organizer of the zodiac, so doing a “pre-fall cleaning” is a perfect way to get things in order before the season actually begins.</p>
+
+    <h3> <li>Finish Projects </li></h3>
+    <p id="tip3"> This time period is not great for starting projects but rather for completing them. Projects you started but got placed on the back burner—now is the time to tie them up. </p>
+
+    <h3> <li>Reach Out to People You Haven't Seen but are Thinking Of </li></h3>
+    <p id="tip4"> This may happen on its own. I always notice my inbox filled with emails from people I haven’t heard from in some time. If people come into your consciousness, reach out. Just like those projects you need to finish, this is the time to rekindle those relationships you might’ve lost touch with that you care for.</p>
+
+    <h3> <li>Don't Sign Contracts or Break Up with Your Partner </li></h3>
+    <p id="tip5"> It’s a more traditional superstition that it’s not a good time to sign contracts or buy electronics as they are more likely to break. If you break up with your beloved, you may find yourself back together again. Things that happen during Mercury retrograde just don’t always stick. On the other hand you may find yourself back together with an ex in this period… unfinished business!</p>
+
+    <h3> <li>Triple-Check All of Your Emails and Text Messages </li></h3>
+    <p id="tip6"> The typos will triple, and what is being said can be misconstrued. If you notice communications getting a little wonky via text or email, it might be better to call and discuss things rather than have misunderstandings.</p>
+
+    <h3><li>Be Extra Gentle with Yourself and Your Loved Ones-Basically Everyone</li></h3>
+    <p id="tip7"> Not only is it Mercury retrograde right now but eclipse season as well, so we are being pushed in many ways. Be gentle, up your self-care and know that everyone around you is in the pressure cooker, too, so be gentle with them also. We’re being asked to grow and forced out of our comfort zones so breathe, surrender and make graceful steps forward.</p>
+</ul>
+</div>
+   
+<footer id="footer">
+  </footer>
+</body>
+</html>
