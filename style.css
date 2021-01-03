@@ -185,6 +185,12 @@ img {
       font-family: 'Montserrat', sans-serif;
   }
 
+  #retrograde p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+  }
+
   #submit {
     text-align: center;
     font-family: 'Staatliches', cursive;
