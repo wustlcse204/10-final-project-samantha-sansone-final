@@ -4,7 +4,6 @@ function findsign() {
     
     if (month == 1&& day >= 20 || month == 2&& day <= 18){
         document.getElementById("zodiac").innerHTML="Aquarius";
-            
         }
 
     if (month == 2&& day >= 19 || month == 3&& day <= 20){
@@ -52,13 +51,15 @@ if(month == 12 && day >= 22 || month == 1 && day <= 19){
  
     document.getElementById("zodiac").innerHTML="Capricorn";
 }
-else if (month>12||day>31){
+else if (month>12||day>31 || day<=0){
     document.getElementById("zodiac").innerHTML="Invalid Input!";
  }
 
 }
 
 
+//My one AJAX call!
+// Mercury Retrograde API referenced: https://mercuryretrogradeapi.com/about.html
 function date() {
     var date =document.getElementById("date").value;
     console.log(date);
@@ -69,6 +70,7 @@ xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         console.log(this.responseText);
 
+        // updated DOM!
         if (this.responseText == '{"is_retrograde":true}') {
             document.getElementById("output").innerHTML = "in Retrograde!";
            

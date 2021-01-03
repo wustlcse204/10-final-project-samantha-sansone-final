@@ -157,9 +157,6 @@ img {
     padding: 10px;
   }
 
-  button:hover {
-
-  }
 
   .text {
     color: black;
@@ -189,7 +186,6 @@ img {
   }
 
   #submit {
-
     text-align: center;
     font-family: 'Staatliches', cursive;
   }
@@ -232,6 +228,39 @@ img {
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+  #form1, #form2 {
+    padding: 20px;
+  }
+ 
+  #name, #email {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #signup p {
+    color: black;
+    text-align: center;
+  }
+  #submitmail {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+   width: 100%;
+   display: inline-block;
+   margin-bottom: 50px;
+   color: white;
+   background-color:black;
+  }
+
+  #submitmail:hover {
+    background-color:white;
+    color: black;
   }
 
   #footer {
